@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('../static/maibg.jpg');
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center center; 
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(90, 80, 80, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF;
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+input[type="file"],
+select,
+input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 400px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info h2 {
+    color: #007BFF;
+}
+
+.info p {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bold;}
+.footer{
+    height: 320px;
+    background-color: #eceeef;
+}
+.contactform{
+    width: 80%;
+}
+.col-6, .col-8, .col-4{
+    /* border: 1px solid black; */
+    /* padding: 2%; */
+}
+.row{
+    width: 90%;
+    margin: auto;
+}
+.navbtns{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 5px;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    
+}
