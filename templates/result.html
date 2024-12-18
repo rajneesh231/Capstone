@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,6 +72,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -85,22 +87,18 @@
 
     <div class="container">
         <h1 class="text-center mb-4">Image Enhancement Results</h1>
-        
+
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Original Image</h3>
                 <img src="data:image/png;base64,{{ original_image }}" alt="Original Image">
             </div>
             <div class="image-container">
-                <h3>Enhanced Image</h3>
+                <h3>{{ secondary_choice }}</h3>
                 <img src="data:image/png;base64,{{ enhanced_image }}" alt="Enhanced Image">
             </div>
         </div>
 
-        <div class="enhancement-details">
-            <h3>Enhancement Details</h3>
-            <p><strong>Enhancement Type:</strong> {{ secondary_choice }}</p>
-        </div>
 
         <div class="text-center mt-4">
             <a href="/" class="btn btn-primary">Process Another Image</a>
@@ -113,4 +111,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
