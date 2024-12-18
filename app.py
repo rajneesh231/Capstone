@@ -175,5 +175,5 @@ def submit():
 def contact_success():
     return render_template('contact_success.html')
 
-if __name__ == '__main__':
-    app.run(debug=False, port=3000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=3000)
