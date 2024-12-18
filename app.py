@@ -19,7 +19,6 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
 
 def process_image(image_path, primary_choice, secondary_choice):
-    print(primary_choice,secondary_choice)
     enhancement_functions = {
         'Mathematical': {
             'AdaptiveThreshold': adaptive_thresholding,
@@ -42,7 +41,6 @@ def process_image(image_path, primary_choice, secondary_choice):
     img = cv2.imread(image_path)
     if primary_choice in enhancement_functions and secondary_choice in enhancement_functions[primary_choice]:
         func = enhancement_functions[primary_choice][secondary_choice]
-        print(f'called Function: {func}')
         enhanced_img = func(img)
         return to_base64(enhanced_img)
     return to_base64(img)
@@ -139,7 +137,6 @@ def index():
                 os.remove(file_path)
             except OSError as e:
                 print(f"Error deleting file {file_path}: {e}")
-            print(secondary_choice)
             return render_template('result.html', 
                                  enhanced_image=enhanced_image, 
                                  original_image=original_image,
