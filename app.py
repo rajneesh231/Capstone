@@ -11,10 +11,9 @@ app.config['UPLOAD_FOLDER'] = 'static/uploads/'
 app.config['ALLOWED_EXTENSIONS'] = {'jpg', 'jpeg', 'png'}
 import logging
 
-# Disable logging of requests in production
-# if not app.debug:
-#     log = logging.getLogger('werkzeug')
-#     log.setLevel(logging.ERROR)  # Only log errors
+if not app.debug:
+    log = logging.getLogger('werkzeug')
+    log.setLevel(logging.ERROR)  # Only log errors
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
