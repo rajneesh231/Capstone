@@ -48,7 +48,16 @@ Try AquaVision live: [AquaVision Website](https://www.rajneeshb.live)
    ```bash
    https://www.rajneeshb.live
    ```
-   
+
+
+### Authors
+- Divyam Malik
+- Rohan Gulati
+- Abhinandan Sharma
+- Rajneesh Bansal
+- Anirudh Bansal
+  
+Under the mentorship of __Dr. Chinmaya Panigrahy__, Thapar Institute of Engineering and Technology.
 
 
 
